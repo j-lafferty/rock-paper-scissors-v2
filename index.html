@@ -3,6 +3,22 @@
 <head>
 </head>
 <body>
-    
+    <script>
+        function playRound(playerSelection, computerSelection) {
+            if (playerSelection == "rock" && computerSelection == "paper") {
+                return `You Lose! ${computerSelection} beats ${playerSelection}`;
+            }   else if (playerSelection == "paper" && computerSelection == "scissors") {
+                return `You Lose! ${computerSelection} beats ${playerSelection}`;
+            }   else if (playerSelection == "scissors" && computerSelection == "rock") {
+                return `You Lose! ${computerSelection} beats ${playerSelection}`;
+            }   else {
+                return `You Win! ${playerSelection} beats ${computerSelection}`;
+            }           
+        }
+
+        const playerSelection = 'paper'
+        const computerSelection = computerPlay()
+        console.log(playRound(playerSelection, computerSelection))
+    </script>
 </body>
 </html>
