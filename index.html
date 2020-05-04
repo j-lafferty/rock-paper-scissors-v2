@@ -4,6 +4,11 @@
 </head>
 <body>
     <script>
+        function computerPlay() {
+            let arr = ["rock", "paper", "scissors"];            
+            return arr[Math.floor(Math.random() * arr.length)];
+        };
+
         function playRound(playerSelection, computerSelection) {
             if (playerSelection == "rock" && computerSelection == "paper") {
                 return `You Lose! ${computerSelection} beats ${playerSelection}`;
