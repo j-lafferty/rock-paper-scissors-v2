@@ -27,15 +27,7 @@
         };
 
         function playRound(playerSelection, computerSelection) {
-            if (playerSelection == 'ROCK' && computerSelection == 'PAPER') {
-                computerScore+=1;
-                console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
-                console.log(`Round ${i}: Player: ${playerScore} Computer: ${computerScore}`);
-            }   else if (playerSelection == 'PAPER' && computerSelection == 'SCISSORS') {
-                computerScore+=1;
-                console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
-                console.log(`Round ${i}: Player: ${playerScore} Computer: ${computerScore}`);
-            }   else if (playerSelection == 'SCISSORS' && computerSelection == 'ROCK') {
+            if (playerSelection == 'ROCK' && computerSelection == 'PAPER' || playerSelection == 'PAPER' && computerSelection == 'SCISSORS' || playerSelection == 'SCISSORS' && computerSelection == 'ROCK') {
                 computerScore+=1;
                 console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
                 console.log(`Round ${i}: Player: ${playerScore} Computer: ${computerScore}`);
