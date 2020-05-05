@@ -46,7 +46,8 @@
                 let computerSelection = computerPlay();
                 let playerSelection = playerPlay();
 
-                console.log(playRound(playerSelection, computerSelection));
+                playRound(playerSelection, computerSelection);
+                console.log("");
             };
             if (playerScore > computerScore) {
                 console.log(`You win the game! Player: ${playerScore} Computer: ${computerScore}`);
