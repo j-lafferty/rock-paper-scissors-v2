@@ -41,6 +41,16 @@
             }           
         };
 
+        function finalScore() {
+            if (playerScore > computerScore) {
+                    console.log(`You win the game! Player: ${playerScore} Computer: ${computerScore}`);
+                }   else if (playerScore < computerScore) {
+                    console.log(`Computer wins the game! Player: ${playerScore} Computer: ${computerScore}`);
+                }   else {
+                    console.log(`Tied game! Player: ${playerScore} Computer: ${computerScore}`);
+            };
+        };
+
         function game() {
             for (; i <= 5; i++) {
                 let computerSelection = computerPlay();
@@ -49,13 +59,7 @@
                 playRound(playerSelection, computerSelection);
                 console.log("");
             };
-            if (playerScore > computerScore) {
-                console.log(`You win the game! Player: ${playerScore} Computer: ${computerScore}`);
-            }   else if (playerScore < computerScore) {
-                console.log(`Computer wins the game! Player: ${playerScore} Computer: ${computerScore}`);
-            }   else {
-                console.log(`Tied game! Player: ${playerScore} Computer: ${computerScore}`);
-            };
+            finalScore();
         };
 
     </script>
